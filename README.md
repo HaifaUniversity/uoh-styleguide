@@ -96,7 +96,7 @@ When developing software as an organization, the value of the software produced 
 -   When you need to use an apostrophe inside a string it is recommended to use double-quotes.
 -   Use template literals only when using expression interplation  `${}`
 
-```
+```javascript
 // bad
 let greeting = "Hello World!";
 
@@ -130,7 +130,7 @@ let template = `string text ${expression} string text`;
 -   Use trailing commas always. DO NOT USE leading commas.
 -   Always use an additional trailing comma.
 
-```
+```javascript
 // bad
 const person = {
   firstName: 'John'
@@ -161,12 +161,12 @@ const person = {
 
 The following example is a case where a comment is completely erroneous, and can actually make the code harder to read.
 
-```
+```javascript
 // Set index to zero.
 let index = 0;
 ```
 -   All **public functions** must have a comment block  `/**...*/`  using  [JSDoc](http://usejsdoc.org/)  style comments.
-```
+```javascript
 /**
  * Takes in a name and returns a greeting string.
  *
@@ -185,7 +185,7 @@ getGreeting(name: string): string {
 -   The class should include a block comment containing the description of the class
 -   The constructor should contain a JSDoc comment annotating any input parameters.
 
-```
+```javascript
 /**
  * Contains properties of a Person.
  */
@@ -229,7 +229,7 @@ class Person {
 -   Place inline comments on a newline above the line they are annotating
 -   Put an empty line before the comment.
 
-```
+```javascript
 // bad
 let lines: Array<string>; // Holds all the lines in the file.
 
@@ -269,7 +269,7 @@ walkFor(name: string, millis: number): void {
 ## Variable Declarations
 
 -   All variables must be declared prior to using them. This aids in code readability and helps prevent undeclared variables from being hoisted onto the global scope.
-```
+```javascript
 // bad
 console.log(a + b);
 
@@ -285,7 +285,7 @@ console.log(a + b);
 
 -   Implied global variables should never be used.
 -   You should never define a variable on the global scope from within a smaller scope.
-```
+```javascript
 // bad
 add(a: number, b: number): number {
   // c is on the global scope!
@@ -296,7 +296,7 @@ add(a: number, b: number): number {
 ```
 -   Declare each variable on a newline.
 -   Use  `let`  or  `const`  to declare each variable. This can save you a lot of trouble when refactoring.
-```
+```javascript
 // bad
 let a = 2,
   b = 2,
@@ -331,7 +331,7 @@ let a = b = 2, c = 4;
 -   Interfaces should use UpperCamelCase.
 -   Interfaces should be prefaced with the capital letter I.
 -   Only  `public`  members should be in an interface, leave out  `protected`  and  `private`  members.
-```
+```javascript
 interface IPerson {
     firstName: string;
     lastName: string;
@@ -355,7 +355,7 @@ interface IPerson {
 ## Proxy
 Use Proxy in order to avoid the CORS block (block-all-mixed-content) in the browser when developing frontend locally and the API is located on a remote server:
 #### index.js:
-```
+```javascript
 const  express  =  require('express');
 const  request  =  require('request');
 const  app  =  express();
