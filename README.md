@@ -1,4 +1,4 @@
-# University of Haifa Code Style Guide!
+# University of Haifa Code Style Guide
 
 This is the TypeScript style guide that we use internally at University of Haifa. It is important that we keep a consistent look/feel of our code and follow the latest best practices in development environment.
 
@@ -16,7 +16,7 @@ When developing software as an organization, the value of the software produced 
 
 ## Browser Compatibility
 
-- Target [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) `ie >= 11`, `chrome`, `firefox`, `safari`.
+- Target [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) `ie >= 11`, `Edge`, `chrome`, `firefox`, `safari`.
 - Avoid targeting older browsers `ie < 10`.
 
 ## Files
