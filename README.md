@@ -10,8 +10,9 @@ When developing software as an organization, the value of the software produced 
 
 > - Use [Angular official Code Style Guide](https://angular.io/guide/styleguide).
 > - Do not build by yourself features that already exist in Angular.
+> - Try avoid using the `HttpClient get()` method. Use the `HttpClient post()` instead for better IE11 compatibility.
 > - Mind the final size of the compiled application. Install only packages that are extremely required.
->  - There is no need for additional CSS frameworks, use only our [University of Haifa Angular Theme](https://www.npmjs.com/package/@uoh/ngx-theme).
+> - There is no need for additional CSS frameworks, use only our [University of Haifa Angular Theme](https://www.npmjs.com/package/@uoh/ngx-theme).
 
 
 ## Browser Compatibility
