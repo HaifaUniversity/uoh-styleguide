@@ -1,4 +1,4 @@
-# University of Haifa Code Style Guide
+# University of Haifa TypeScript and Angular Style Guide
 
 This is the TypeScript style guide that we use internally at University of Haifa. It is important that we keep a consistent look/feel of our code and follow the latest best practices in development environment.
 
