@@ -353,6 +353,25 @@ interface IPerson {
 -   **Never use the Function constructor**
 -   **Never pass strings to  `setTimeout`  or  `setInterval`**
 
+## Important <meta> tags
+
+-   In order to avoid layout and compatibility issues, use this `<meta>`s in your index.html `<head>`.
+
+```html
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  ...
+</body>
+</html>
+```
+
 ## Proxy
 Use Proxy in order to avoid the CORS block (block-all-mixed-content) in the browser when developing frontend locally and the API is located on a remote server:
 #### index.js:
