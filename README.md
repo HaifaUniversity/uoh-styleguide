@@ -213,10 +213,10 @@ class Person {
    * should walk.
    */
   public walkFor(millis: number): void {
-    console.log(this.name + ' is now walking.');
+    console.log(`${this.name} is now walking.`);
 
     setTimeout(() => {
-      console.log(this.name + ' has stopped walking.');
+      console.log(`${this.name} has stopped walking.`);
     }, millis);
   }
 }
@@ -240,20 +240,20 @@ let lines: Array<string>;
 
 // bad
 walkFor(name: string, millis: number): void {
-  console.log(name + ' is now walking.');
+  console.log(`${name} is now walking.`);
   // Wait for millis milliseconds to stop walking
   setTimeout(() => {
-    console.log(name + ' has stopped walking.');
+    console.log(`${name} has stopped walking.`);
   }, millis);
 }
 
 // good
 walkFor(name: string, millis: number): void {
-  console.log(name + ' is now walking.');
+  console.log(`${name} is now walking.`);
 
   // Wait for millis milliseconds to stop walking
   setTimeout(() => {
-    console.log(name + ' has stopped walking.');
+    console.log(`${name} has stopped walking.`);
   }, millis);
 }
 ```
@@ -374,11 +374,12 @@ app.use('/proxy',  function(req,  res)  {
       .on('error',  err  =>  console.log(`error ${err}`))
       .pipe(res);
   }  catch (e) 
-    console.log('Error: '  +  e);
+    console.log(`Error: ${e}`);
   }
 });
 app.listen(PORT);
 ```
+For more information, please refer to the following [link](https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md).
 
 ## TSLint
 
