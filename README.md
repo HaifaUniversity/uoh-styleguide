@@ -174,7 +174,7 @@ let index = 0;
  * @param name The name of the greeted person.
  */
 getGreeting(name: string): string {
-  return 'Hello ' + name + '!';
+  return `Hello ${name}!`;
 }
 ```
 
