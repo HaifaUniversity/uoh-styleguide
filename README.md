@@ -95,7 +95,7 @@ When developing software as an organization, the value of the software produced 
 
 -   Use single-quotes  `''`  for all strings, and use double-quotes  `""`  for strings within strings.
 -   When you need to use an apostrophe inside a string it is recommended to use double-quotes.
--   Use template literals only when using expression interplation  `${}`
+-   Use template literals only when using expression interpolation  `${}`
 
 ```javascript
 // bad
