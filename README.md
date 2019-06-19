@@ -8,6 +8,8 @@ When developing software as an organization, the value of the software produced 
 
 ## General Remarks 
 
+> - Use the latest stable Angular version.
+> - Check your npm packages for vulnerabilities (run `npm audit`) and upgrade them regularly.
 > - Use [Angular official Code Style Guide](https://angular.io/guide/styleguide).
 > - There is no need for additional CSS frameworks, use only our *[University of Haifa Angular Theme](https://www.npmjs.com/package/@uoh/ngx-theme)*.
 > - Do not build by yourself features that already exist in Angular.
