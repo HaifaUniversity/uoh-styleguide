@@ -1,5 +1,7 @@
 # University of Haifa TypeScript and Angular Style Guide
 
+**Source** https://github.com/Platypi/style_typescript
+
 This is the TypeScript style guide that we use internally at University of Haifa. It is important that we keep a consistent look/feel of our code and follow the latest best practices in development environment.
 
 ## Introduction
@@ -415,3 +417,27 @@ Linting your code is very helpful for preventing minor issues that can escape th
 Formatting your code is very helpful for readability. When working in teams, it is nice to be able to look at code that is in the same format across the entire application.
 
 -   Prettier:  [https://github.com/prettier/prettier](https://github.com/prettier/prettier)
+
+
+## JAVA Code Convention
+
+Oracle code convention: [Click Here](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+
+In addition to Oracle code convention
+
+* Servlet file name should end with "Servlet" suffix. ```ApplicationServlet.java```.
+* Always free-resouces (Files, Stream, Sockets and Database Connections). 
+```
+Connection conn;
+ try {
+   conn = dataSource.getConnection();
+ }
+ catch(Exception e) {
+   e.printStackTrace();
+ }
+ finally {
+   if(conn != null) {
+     conn.close();
+   }
+ }
+ ```
